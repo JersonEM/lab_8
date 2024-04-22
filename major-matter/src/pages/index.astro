@@ -1,17 +1,11 @@
 ---
-const buyList = [
-	'Controller',
-	'Bread',
-	'Water',
-	'Notebook',
-	'Math Book',
-	'Choco Bar',
-	'Milk'
-];
+const URL_RANDOM_AVATAR = 'https://api.minimalavatars.com/avatar/random/png';
+let avatar = URL_RANDOM_AVATAR;
 ---
 
-<ul>
-	{#each buyList as item}
-	  <li>{item}</li>
-	{/each}
-</ul>
+<title>Random Image</title>
+<body>
+	<img src={avatar} alt="Avatar" />
+	<b>Descripcion:</b>
+	<a>Esta es una descripcion pequeña del avatar</a>
+</body>
