@@ -1,11 +1,17 @@
 ---
-let contador = 5;
-
-function sumar() {
-  contador += 50;
-}
+const buyList = [
+	'Controller',
+	'Bread',
+	'Water',
+	'Notebook',
+	'Math Book',
+	'Choco Bar',
+	'Milk'
+];
 ---
 
-<button on.click={sumar}>
-  <p>{contador}</p>
-</button>
+<ul>
+	{#each buyList as item}
+	  <li>{item}</li>
+	{/each}
+</ul>
